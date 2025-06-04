@@ -1,6 +1,6 @@
 context:
   name: box2d
-  version: "3.1.0"
+  version: "3.1.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/erincatto/box2d/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 7fac19801485efb31ee3745b2284d9d4601f9e8138a3383a7b0df6d788ea5785
+  sha256: fb6ef914b50f4312d7d921a600eabc12318bb3c55a0b8c0b90608fa4488ef2e4
   patches:
     - cmake.patch
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
